@@ -120,7 +120,7 @@ localhost:publishedIPport
 - Continue the workshop by starting to [configure your JHipster application](https://github.com/sebivenlo/jhipster/blob/master/AssignmentConfiguring.MD)
 
 
-## Setting up the environment manually (Without docker)
+## Setting up the environment manually for Windows, Mac and Linux (Without docker)
 
 - Install Java 8 or higher from Oracle
 - Install [Git](https://git-scm.com)
@@ -154,11 +154,7 @@ Execute the following command in the same terminal to start the back-end:
 ```
 ./mvnw
 ```
-- When doing UI development on a JHipster-generated application, it’s nice to see your changes as soon as you save a file. JHipster 4 uses Browsersync and webpack to power this feature. You enable this by opening a new terminal and connect to the container again:
-```
-docker container exec -it <container_name> bash
-```
-- Then execute the following command:
+- When doing UI development on a JHipster-generated application, it’s nice to see your changes as soon as you save a file. JHipster 4 uses Browsersync and webpack to power this feature. You enable this by executing the following command:
 ```
 yarn start
 ```
