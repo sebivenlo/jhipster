@@ -61,6 +61,7 @@ docker container exec -it <container_name> bash
 yarn start
 ```
 - Please open your generated project from the local shared folder in Netbeans
+- Continue the workshop by starting to [configure your JHipster application](https://github.com/sebivenlo/jhipster/blob/master/AssignmentConfiguring.MD)
 
 
 ### For Windows and Mac users
@@ -73,7 +74,9 @@ yarn start
 - In the "Volumes" section click the /home/jhipster/app directory
 - In the prompt select "enable volumes"
 - Docker might ask if you want to share your drive, select yes
-- Start the JHipster container 
+- In Kitematic, select the JHipster container and go to Settings -> Hostname/Ports
+- Change all published IP ports to their corresponding docker port (3001, 8080, 9000) and press save
+- Start the JHipster container
 - Open a new terminal window and execute the following command to connect to the container:
 ```
 docker container exec -it <container_name> bash
@@ -108,12 +111,13 @@ docker container exec -it <container_name> bash
 yarn start
 ```
 - Another option is to open a powershell directly from the container in Kitematic and execute yarn start
-- In Kitematic, select the JHipster container and go to Hostname/Ports
+- In Kitematic, select the JHipster container and go to Settings -> Hostname/Ports
 - Find the published IP port that belongs to docker port 9000 in the list and connect to your application using
 ```
 localhost:publishedIPport
 ```
 - Please open your generated project from the local shared folder in Netbeans
+- Continue the workshop by starting to [configure your JHipster application](https://github.com/sebivenlo/jhipster/blob/master/AssignmentConfiguring.MD)
 
 
 ## Setting up the environment manually (Without docker)
@@ -159,3 +163,4 @@ docker container exec -it <container_name> bash
 yarn start
 ```
 - Please open your generated project in Netbeans
+- Continue the workshop by starting to [configure your JHipster application](https://github.com/sebivenlo/jhipster/blob/master/AssignmentConfiguring.MD)
