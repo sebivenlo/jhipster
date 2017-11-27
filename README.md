@@ -134,7 +134,7 @@ yarn global add yo
 ```
 yarn global add generator-jhipster
 ```
-- To create a project, open a terminal window and create a directory. For example, mdkdir blog. Navigate into the directory and run the command:
+- To create a project, open a terminal window and create a directory. For example, mdkdir JHipsterApp. Navigate into the directory and run the command:
 ```
 yo jhipster 
 ```
@@ -159,4 +159,11 @@ Execute the following command in the same terminal to start the back-end:
 yarn start
 ```
 - Please open your generated project in Netbeans
+- Continue the workshop by starting to [configure your JHipster application](https://github.com/sebivenlo/jhipster/blob/master/AssignmentConfiguring.MD)
+
+## If you do not get a working application running..
+
+- Make sure you follow the manual installation instructions atleast until generating the application
+- Clone the StartingApp project from the github repository
+- Please open your project in Netbeans
 - Continue the workshop by starting to [configure your JHipster application](https://github.com/sebivenlo/jhipster/blob/master/AssignmentConfiguring.MD)
