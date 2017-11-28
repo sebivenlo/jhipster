@@ -53,7 +53,7 @@
     
 - You should now be able to access the application at http://localhost:9000/
     
-## Filling the database with some data:
+## Filling the database with some data
   
 - Once you have succesfully opened the web application, login into the default admin account using the username "admin", and password "admin".
 - Click on the Entities menu, you should see all of the Entities that you imported.
@@ -61,7 +61,7 @@
 - Navigate to the Property Entity and create a few new properties in a similar way. Properties are linked to beverages, to indicate for example the type of beer.
 - Navigate to the Beer Entity and create a few new beers, you can now select the beverage chart and and select multiple properties that you have just created ( with the shift or control button ).
   
-## Setting up the business logic:
+## Making changes to the Business Logic
   
 ```
     Note: It is not possible to provide documentation in the code as all of the classes are generated.
@@ -71,15 +71,16 @@
     application thanks to Spring Boot's developer tools. This may not function correctly if using Docker.
 ```
 - Manage access to your entities.
-By default, all users are allowed to view all beverage charts, all beers and all wines. Instead the user should only be allowed to view his own beverage charts, beers and wines.
+
+    - By default, all users are allowed to view all beverage charts, all beers and all wines. 
+    Instead the user should only be allowed to view his own beverage charts, beers and wines.
       
-      You should have an opened JHipster project in netbeans.
-      
+    - You should have an opened JHipster project in netbeans.
       In your project navigate the *Entity_Name*Resource.java, and think of which REST request to modify.
-      
-      Tip: Find by current user.
-      
-## Changing the User Interface
+```      
+Tip: Find by current user.
+```      
+## Making changes to the User Interface
 
 - Make sure that the introduction field of your beverage chart no longer escapes HTML code (TIP: Angular manages this)
 
