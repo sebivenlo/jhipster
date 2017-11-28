@@ -1,0 +1,25 @@
+{
+    "jHipsterApp": {
+        "wine" : {
+            "home": {
+                "title": "Wines",
+                "createLabel": "Wine erstellen",
+                "createOrEditLabel": "Wine erstellen oder bearbeiten"
+            },
+            "created": "Wine erstellt mit ID {{ param }}",
+            "updated": "Wine aktualisiert mit ID {{ param }}",
+            "deleted": "Wine gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Wine {{ id }} wirklich dauerhaft gelöscht werden?"
+            },
+            "detail": {
+                "title": "Wine"
+            },
+            "name": "Name",
+            "price": "Price",
+            "quantity": "Quantity",
+            "beverageChart": "Beverage Chart",
+            "property": "Property"
+        }
+    }
+}

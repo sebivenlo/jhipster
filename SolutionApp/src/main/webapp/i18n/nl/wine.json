@@ -1,0 +1,25 @@
+{
+    "jHipsterApp": {
+        "wine" : {
+            "home": {
+                "title": "Wines",
+                "createLabel": "Maak een nieuwe Wine",
+                "createOrEditLabel": "Maak of wijzig een Wine"
+            },
+            "created": "A new Wine is created with identifier {{ param }}",
+            "updated": "A Wine is updated with identifier {{ param }}",
+            "deleted": "A Wine is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bent u zeker dat u Wine {{ id }} wilt verwijderen?"
+            },
+            "detail": {
+                "title": "Wine"
+            },
+            "name": "Name",
+            "price": "Price",
+            "quantity": "Quantity",
+            "beverageChart": "Beverage Chart",
+            "property": "Property"
+        }
+    }
+}

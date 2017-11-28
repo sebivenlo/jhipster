@@ -1,0 +1,33 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "beer",
+            "otherEntityName": "beer",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "property"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "wine",
+            "otherEntityName": "wine",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "property"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20171127154905",
+    "entityTableName": "property",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

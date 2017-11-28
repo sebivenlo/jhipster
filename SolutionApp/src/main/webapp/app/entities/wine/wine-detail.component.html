@@ -1,0 +1,45 @@
+
+<div *ngIf="wine">
+    <h2><span jhiTranslate="jHipsterApp.wine.detail.title">Wine</span> {{wine.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="jHipsterApp.wine.name">Name</span></dt>
+        <dd>
+            <span>{{wine.name}}</span>
+        </dd>
+        <dt><span jhiTranslate="jHipsterApp.wine.price">Price</span></dt>
+        <dd>
+            <span>{{wine.price}}</span>
+        </dd>
+        <dt><span jhiTranslate="jHipsterApp.wine.quantity">Quantity</span></dt>
+        <dd>
+            <span>{{wine.quantity}}</span>
+        </dd>
+        <dt><span jhiTranslate="jHipsterApp.wine.beverageChart">Beverage Chart</span></dt>
+        <dd>
+            <div *ngIf="wine.beverageChart">
+                <a [routerLink]="['/beverage-chart', wine.beverageChart?.id]">{{wine.beverageChart?.name}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="jHipsterApp.wine.property">Property</span></dt>
+        <dd>
+            <span *ngFor="let property of wine.properties; let last = last">
+                <a [routerLink]="['/property', property?.id ]">{{property.name}}</a>{{last ? '' : ', '}}
+            </span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'wine/'+ wine.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

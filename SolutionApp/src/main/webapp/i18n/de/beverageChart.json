@@ -1,0 +1,23 @@
+{
+    "jHipsterApp": {
+        "beverageChart" : {
+            "home": {
+                "title": "Beverage Charts",
+                "createLabel": "Beverage Chart erstellen",
+                "createOrEditLabel": "Beverage Chart erstellen oder bearbeiten"
+            },
+            "created": "Beverage Chart erstellt mit ID {{ param }}",
+            "updated": "Beverage Chart aktualisiert mit ID {{ param }}",
+            "deleted": "Beverage Chart gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Beverage Chart {{ id }} wirklich dauerhaft gelöscht werden?"
+            },
+            "detail": {
+                "title": "Beverage Chart"
+            },
+            "name": "Name",
+            "intro": "Intro",
+            "user": "User"
+        }
+    }
+}

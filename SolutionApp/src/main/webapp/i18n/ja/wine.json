@@ -1,0 +1,25 @@
+{
+    "jHipsterApp": {
+        "wine" : {
+            "home": {
+                "title": "Wines",
+                "createLabel": "Wine を追加",
+                "createOrEditLabel": "Wineを追加または編集"
+            },
+            "created": "A new Wine is created with identifier {{ param }}",
+            "updated": "A Wine is updated with identifier {{ param }}",
+            "deleted": "A Wine is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Wine {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Wine"
+            },
+            "name": "Name",
+            "price": "Price",
+            "quantity": "Quantity",
+            "beverageChart": "Beverage Chart",
+            "property": "Property"
+        }
+    }
+}

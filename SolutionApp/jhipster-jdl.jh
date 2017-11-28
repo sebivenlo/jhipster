@@ -1,0 +1,31 @@
+entity BeverageChart {
+	name String required,
+	intro String required
+}
+
+entity Beer {
+	name String required,
+	price Float required,
+	quantity Float required
+}
+
+entity Wine {
+	name String required,
+	price Float required,
+	quantity Float required
+}
+
+entity Property {
+	name String required
+}
+
+relationship ManyToOne {
+	BeverageChart{user(login)} to User,
+	Beer{beverageChart(name)} to BeverageChart,
+    Wine{beverageChart(name)} to BeverageChart
+}
+
+relationship ManyToMany {
+	Beer{property(name)} to Property{beer},
+    Wine{property(name)} to Property{wine}
+}

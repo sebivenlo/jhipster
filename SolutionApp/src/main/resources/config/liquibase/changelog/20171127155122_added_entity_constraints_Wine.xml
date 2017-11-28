@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity Wine.
+    -->
+    <changeSet id="20171127155122-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="beverage_chart_id"
+                                 baseTableName="wine"
+                                 constraintName="fk_wine_beverage_chart_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="beverage_chart"/>
+
+        <addForeignKeyConstraint baseColumnNames="wines_id"
+                                 baseTableName="wine_property"
+                                 constraintName="fk_wine_property_wines_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="wine"/>
+        <addForeignKeyConstraint baseColumnNames="properties_id"
+                                 baseTableName="wine_property"
+                                 constraintName="fk_wine_property_properties_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="property"/>
+        
+    </changeSet>
+</databaseChangeLog>

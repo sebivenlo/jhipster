@@ -1,0 +1,25 @@
+{
+    "jHipsterApp": {
+        "beer" : {
+            "home": {
+                "title": "Beers",
+                "createLabel": "Beer を追加",
+                "createOrEditLabel": "Beerを追加または編集"
+            },
+            "created": "A new Beer is created with identifier {{ param }}",
+            "updated": "A Beer is updated with identifier {{ param }}",
+            "deleted": "A Beer is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Beer {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Beer"
+            },
+            "name": "Name",
+            "price": "Price",
+            "quantity": "Quantity",
+            "beverageChart": "Beverage Chart",
+            "property": "Property"
+        }
+    }
+}

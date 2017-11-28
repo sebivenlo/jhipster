@@ -1,0 +1,23 @@
+{
+    "jHipsterApp": {
+        "beverageChart" : {
+            "home": {
+                "title": "BeverageCharts",
+                "createLabel": "Beverage Chart を追加",
+                "createOrEditLabel": "Beverage Chartを追加または編集"
+            },
+            "created": "A new Beverage Chart is created with identifier {{ param }}",
+            "updated": "A Beverage Chart is updated with identifier {{ param }}",
+            "deleted": "A Beverage Chart is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Beverage Chart {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Beverage Chart"
+            },
+            "name": "Name",
+            "intro": "Intro",
+            "user": "User"
+        }
+    }
+}

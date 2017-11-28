@@ -1,0 +1,25 @@
+{
+    "jHipsterApp": {
+        "beer" : {
+            "home": {
+                "title": "Beers",
+                "createLabel": "Beer erstellen",
+                "createOrEditLabel": "Beer erstellen oder bearbeiten"
+            },
+            "created": "Beer erstellt mit ID {{ param }}",
+            "updated": "Beer aktualisiert mit ID {{ param }}",
+            "deleted": "Beer gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Beer {{ id }} wirklich dauerhaft gelöscht werden?"
+            },
+            "detail": {
+                "title": "Beer"
+            },
+            "name": "Name",
+            "price": "Price",
+            "quantity": "Quantity",
+            "beverageChart": "Beverage Chart",
+            "property": "Property"
+        }
+    }
+}

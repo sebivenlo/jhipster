@@ -1,0 +1,23 @@
+{
+    "jHipsterApp": {
+        "property" : {
+            "home": {
+                "title": "Properties",
+                "createLabel": "Maak een nieuwe Property",
+                "createOrEditLabel": "Maak of wijzig een Property"
+            },
+            "created": "A new Property is created with identifier {{ param }}",
+            "updated": "A Property is updated with identifier {{ param }}",
+            "deleted": "A Property is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bent u zeker dat u Property {{ id }} wilt verwijderen?"
+            },
+            "detail": {
+                "title": "Property"
+            },
+            "name": "Name",
+            "beer": "Beer",
+            "wine": "Wine"
+        }
+    }
+}

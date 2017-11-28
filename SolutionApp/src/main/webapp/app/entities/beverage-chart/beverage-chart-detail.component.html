@@ -1,0 +1,33 @@
+
+<div *ngIf="beverageChart">
+    <h2><span jhiTranslate="jHipsterApp.beverageChart.detail.title">Beverage Chart</span> {{beverageChart.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="jHipsterApp.beverageChart.name">Name</span></dt>
+        <dd>
+            <span>{{beverageChart.name}}</span>
+        </dd>
+        <dt><span jhiTranslate="jHipsterApp.beverageChart.intro">Intro</span></dt>
+        <dd>
+            <span>{{beverageChart.intro}}</span>
+        </dd>
+        <dt><span jhiTranslate="jHipsterApp.beverageChart.user">User</span></dt>
+        <dd>
+            {{beverageChart.user?.login}}
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'beverage-chart/'+ beverageChart.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

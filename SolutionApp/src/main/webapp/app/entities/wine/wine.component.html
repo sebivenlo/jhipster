@@ -1,0 +1,53 @@
+<div>
+    <h1 style="font-style: italic;">
+        <span>The wine collection</span>
+        <button class="btn btn-primary float-right jh-create-entity create-wine" [routerLink]="['/', { outlets: { popup: ['wine-new'] } }]">
+            <span class="fa fa-plus"></span>
+            <span  jhiTranslate="jHipsterApp.wine.home.createLabel">
+            Create new Beer
+            </span>
+        </button>
+    </h1>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+    </div>
+    <br/>
+    
+
+<div class="table-responsive" *ngIf="wines">
+   
+        <div *ngFor="let wine of wines; trackBy: trackId">
+            <h2>{{wine.name}}</h2>
+            <small>Posted by {{wine.beverageChart.user.login}}</small>
+            <div>Price: €{{wine.price}}</div>
+            <div>{{wine.quantity}} mL</div>
+            <div *ngIf="wine.beverageChart">
+                        <a [routerLink]="['../beverage-chart', wine.beverageChart?.id ]" >{{wine.beverageChart?.name}}</a>
+                    </div>
+            <div>
+            <span *ngFor="let property of wine.properties; let last = last">
+                            <a class="form-control-static" [routerLink]="['../property', property?.id ]">{{property.name}}</a>{{last ? '' : ', '}}
+                        </span>
+            </div>
+            <div class="btn-group mb-2 mt-1">
+                <button type="submit"
+                        [routerLink]="['/', { outlets: { popup: 'wine/'+ wine.id + '/edit'} }]"
+                        replaceUrl="true"
+                        class="btn btn-primary btn-sm">
+                    <span class="fa fa-pencil"></span>
+                    <span class="hidden-md-down" jhiTranslate="entity.action.edit">Edit</span>
+                </button>
+                <button type="submit"
+                        [routerLink]="['/', { outlets: { popup: 'wine/'+ wine.id + '/delete'} }]"
+                        replaceUrl="true"
+                        class="btn btn-danger btn-sm">
+                    <span class="fa fa-remove"></span>
+                    <span class="hidden-md-down" jhiTranslate="entity.action.delete">Delete</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>

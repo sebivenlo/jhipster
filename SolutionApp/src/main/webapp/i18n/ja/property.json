@@ -1,0 +1,23 @@
+{
+    "jHipsterApp": {
+        "property" : {
+            "home": {
+                "title": "Properties",
+                "createLabel": "Property を追加",
+                "createOrEditLabel": "Propertyを追加または編集"
+            },
+            "created": "A new Property is created with identifier {{ param }}",
+            "updated": "A Property is updated with identifier {{ param }}",
+            "deleted": "A Property is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Property {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Property"
+            },
+            "name": "Name",
+            "beer": "Beer",
+            "wine": "Wine"
+        }
+    }
+}
