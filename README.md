@@ -2,6 +2,8 @@
 In this workshop you will learn how to install, configure and run a JHipster application.
 The first part of the workshop will be theory. The second part has assignments about setting up a JHipster environment and configuring a JHipster application.
 
+JHipster documentation : [http://www.jhipster.tech/](http://www.jhipster.tech/)
+
 Workshop by Joey de Vlieger and Niels Killaars
 
 ## Setting up the environment using Docker
