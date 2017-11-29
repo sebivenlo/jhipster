@@ -84,4 +84,8 @@ Tip: Find by current user.
 
 - Make sure that the introduction field of your beverage chart no longer escapes HTML code (TIP: Angular manages this)
 
-- Make the beer list look like a stacked layout in a single column 
+- Give the beer and wine lists a stacked layout in a single column (TIP: Stop using a HTML table) 
+```
+Your browser should be automatically reloaded everytime you save a file
+```
+
