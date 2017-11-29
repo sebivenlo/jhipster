@@ -61,7 +61,7 @@ docker container exec -it <container_name> bash
 yarn start
 ```
 - Please open your generated project from the local shared folder in Netbeans
-- Continue the workshop by starting to [configure your JHipster application](https://github.com/sebivenlo/jhipster/blob/master/AssignmentConfiguring.MD)
+- Continue the workshop by starting to [configure your JHipster application](https://github.com/sebivenlo/jhipster/blob/master/AssignmentConfiguring.md)
 
 
 ### For Windows and Mac users
@@ -117,7 +117,7 @@ yarn start
 localhost:publishedIPport
 ```
 - Please open your generated project from the local shared folder in Netbeans
-- Continue the workshop by starting to [configure your JHipster application](https://github.com/sebivenlo/jhipster/blob/master/AssignmentConfiguring.MD)
+- Continue the workshop by starting to [configure your JHipster application](https://github.com/sebivenlo/jhipster/blob/master/AssignmentConfiguring.md)
 
 
 ## Setting up the environment manually for Windows, Mac and Linux (Without docker)
@@ -166,4 +166,4 @@ yarn start
 - Make sure you follow the manual installation instructions atleast until generating the application
 - Clone the StartingApp project from the github repository
 - Please open your project in Netbeans
-- Continue the workshop by starting to [configure your JHipster application](https://github.com/sebivenlo/jhipster/blob/master/AssignmentConfiguring.MD)
+- Continue the workshop by starting to [configure your JHipster application](https://github.com/sebivenlo/jhipster/blob/master/AssignmentConfiguring.md)
